@@ -27,7 +27,7 @@ body {
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    background-image: url(./images/First/фон.png);
+    background-image: url('./images/First/фон.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -217,7 +217,7 @@ hr3{
 }
 
 .End {
-  background-image: url(./images/First/низ.png);
+  background-image: url('./images/First/низ.png');
   display: flex;
   margin: 20px 0 0 0 ;
   justify-content: space-between; /* Лого+текст слева, "О нас" справа */
