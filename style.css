@@ -217,7 +217,7 @@ hr3{
 }
 
 .End {
-  background-image: url('./images/First/низ.png');
+  background-color: #292929;
   display: flex;
   margin: 20px 0 0 0 ;
   justify-content: space-between; /* Лого+текст слева, "О нас" справа */
