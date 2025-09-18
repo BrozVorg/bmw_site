@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'BMW Type Web Light All';
-  src: url('/fonts/bmw_type_web_light_all-webfont.woff2') format('woff2');}
+  src: url('./fonts/bmw_type_web_light_all-webfont.woff2') format('woff2');}
 @font-face{
   font-family: 'BMW Type';
-  src: url('/fonts/bmw_type-webfont.woff') format('woff2');}
+  src: url('./fonts/bmw_type-webfont.woff') format('woff2');}
 @font-face{
   font-family: 'BMWTypeLight';
-  src: url('/fonts/bmw_type_light-webfont.woff') format('woff2');
+  src: url('./fonts/bmw_type_light-webfont.woff') format('woff2');
 }
 
 
 body {
-  font-family: url('/fonts/bmw_type_web_light_all-webfont.woff2') format('woff2');
+  font-family: url('./fonts/bmw_type_web_light_all-webfont.woff2') format('woff2');
   color: #fff;
   overflow-x: hidden;
   width: 100%;
@@ -27,7 +27,7 @@ body {
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    background-image: url(/images/First/фон.png);
+    background-image: url(./images/First/фон.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -75,7 +75,7 @@ hr1{
 }
 
 .headtochose {
-  font-family: url('/fonts/bmw_type_light-webfont.woff') format('woff2');
+  font-family: url('./fonts/bmw_type_light-webfont.woff') format('woff2');
   color: #000000;
   display: flex;
   align-items: center;
@@ -217,7 +217,7 @@ hr3{
 }
 
 .End {
-  background-image: url(/images/First/низ.png);
+  background-image: url(./images/First/низ.png);
   display: flex;
   margin: 20px 0 0 0 ;
   justify-content: space-between; /* Лого+текст слева, "О нас" справа */
