@@ -39,7 +39,7 @@ body {
   align-items: center;
   justify-content: space-between; /* Лого+текст слева, "О нас" справа */
   padding: 20px 40px;
-  font-size: 4vw;
+  font-size: 7vw;
   position: relative;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 .aboutus{
-  font-size: 4vw;
+  font-size: 7vw;
 }
 
 hr1{
