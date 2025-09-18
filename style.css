@@ -53,8 +53,12 @@ body {
   height: 7vw; /* подгони под размер логотипа */
 }
 
-.model, .about {
+.model, .aboutus {
   cursor: pointer;
+}
+
+.aboutus{
+  font-size: 4vw;
 }
 
 hr1{
