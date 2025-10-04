@@ -1,0 +1,487 @@
+@font-face {
+  font-family: 'BMW Type Web Light All';
+  src: url('./fonts/bmw_type_web_light_all-webfont.woff2') format('woff2'),
+       url('./fonts/bmw_type_web_light_all-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+  }
+
+@font-face{
+  font-family: 'BMW Type';
+  src: url('./fonts/bmw_type-webfont.woff') format('woff'),
+       url('./fonts/bmw_type-webfont.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;}
+@font-face{
+  font-family: 'BMWTypeLight';
+  src: url('./fonts/bmw_type_light-webfont.woff') format('woff'),
+       url('./fonts/bmw_type_light-webfont.woff2') format('woff2');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'BMW Type';
+  color: #fff;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* Стили для логотипа-ссылки */
+.headbotton a[href="index.html"] {
+  display: inline-block;
+  height: 7vw;
+}
+
+.headbotton a[href="index.html"] img {
+  border: none;
+  outline: none;
+  transition: opacity 0.3s ease;
+}
+
+.headbotton a[href="index.html"]:hover img {
+  opacity: 0.8;
+}
+
+.model {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: inherit; /* Наследует цвет от родителя */
+    cursor: pointer; /* Курсор-указатель при наведении */
+}
+.model:hover {
+    color: inherit; /* Цвет при наведении такой же */
+    text-decoration: none; /* Убирает подчеркивание при наведении */
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/First/фон.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.headbotton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Лого+текст слева, "О нас" справа */
+  padding: 20px 40px;
+  font-size: 5vw;
+  position: relative;
+}
+
+.left-block {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Расстояние между логотипом и "Модельный ряд" */
+}
+
+.headbotton img {
+  height: 7vw; /* подгони под размер логотипа */
+}
+
+.model, .aboutus {
+  cursor: pointer;
+}
+
+.aboutus{
+  font-size: 5vw;
+  text-decoration: none; /* Убирает подчеркивание */
+  color: inherit; /* Наследует цвет от родителя */
+  cursor: pointer; /* Курсор-указатель при наведении */
+  color: inherit; /* Цвет при наведении такой же */
+  text-decoration: none; /* Убирает подчеркивание при наведении */
+}
+
+hr1{
+  display: block;
+  margin: 0px 40px;         /* отступы сверху/снизу и слева/справа */
+  border: none;         /* убираем стандартную линию */
+  border-top: 2px solid #fff; /* рисуем свою линию */
+  box-sizing: border-box;
+}
+
+.beliver {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Лого+текст слева, "О нас" справа */
+  padding: 20px 0;
+  font-size: 5vw;
+  position: relative;
+}
+
+.headtochose {
+  font-family: url('./fonts/bmw_type_light-webfont.woff') format('woff');
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Лого+текст слева, "О нас" справа */
+  padding: 20px 40px;
+  font-size: 7vw;
+  position: relative;
+}
+
+hr2{
+  display: block;
+  margin: 0px 40px;         /* отступы сверху/снизу и слева/справа */
+  border: none;         /* убираем стандартную линию */
+  border-top: 2px solid #000000; /* рисуем свою линию */
+  box-sizing: border-box;
+}
+
+
+hr3{
+  display: block;
+  margin: 0px 40px;         /* отступы сверху/снизу и слева/справа */
+  border: none;         /* убираем стандартную линию */
+  border-top: 2px solid #000000; /* рисуем свою линию */
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;      /* Убираем подчеркивание */
+  color: #000000;            /* Черный цвет текста */
+  cursor: pointer;           /* Курсор-указатель */
+}
+
+
+.two_series_block {
+  margin: 0px 40px;
+  color: #000000;
+  display: flex;
+  align-items: center;  /* центрируем картинку по высоте всего текста */
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.two_series_content {
+  max-width: 100%; /* чтобы текст не растягивался на всю ширину */
+}
+
+.two_series {
+  font-size: 5vw;
+  margin-bottom: 20px;
+}
+
+
+.two_series_text {
+  font-size: 1.8vw;
+  line-height: 1;
+}
+
+.imgfortwo {
+    flex: 0 0 40%;
+    position: relative;
+}
+
+.imgfortwo img{
+  width: 100%; /* Изображение займет 100% ширины контейнера */
+  max-width: 100%;  /* ограничиваем ширину */
+  height: auto ;      /* сохраняем пропорции */
+  object-fit: auto; /* если хочешь, чтобы картинка занимала блок ровно */
+  margin-left: auto; /* сдвигает картинку вправо */
+  margin-right: auto; /* сдвигает картинку влево */
+}
+
+
+.four_series_block {
+  margin: 0px 40px;
+  color: #000000;
+  display: flex;
+  align-items: center;  /* центрируем картинку по высоте всего текста */
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.four_series_content {
+  max-width: 100%; /* чтобы текст не растягивался на всю ширину */
+}
+
+.four_series {
+  font-size: 5vw;
+  margin-bottom: 20px;
+}
+
+
+.four_series_text {
+  font-size: 1.8vw;
+  line-height: 1;
+}
+
+.imgforfour {
+    flex: 0 0 40%;
+    position: relative;
+}
+
+.imgforfour img{
+  width: 100%; /* Изображение займет 100% ширины контейнера */
+  max-width: 100%;  /* ограничиваем ширину */
+  height: auto ;      /* сохраняем пропорции */
+  object-fit: auto; /* если хочешь, чтобы картинка занимала блок ровно */
+  margin-left: auto; /* сдвигает картинку вправо */
+  margin-right: auto; /* сдвигает картинку влево */
+}
+
+.five_series_block {
+  margin: 0px 40px;
+  color: #000000;
+  display: flex;
+  align-items: center;  /* центрируем картинку по высоте всего текста */
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.five_series_content {
+  max-width: 100%; /* чтобы текст не растягивался на всю ширину */
+}
+
+.five_series {
+  font-size: 5vw;
+  margin-bottom: 20px;
+}
+
+
+.five_series_text {
+  font-size: 1.8vw;
+  line-height: 1;
+}
+
+.imgforfive {
+    flex: 0 0 40%;
+    position: relative;
+}
+
+.imgforfive img{
+  width: 100%; /* Изображение займет 100% ширины контейнера */
+  max-width: 100%;  /* ограничиваем ширину */
+  height: auto ;      /* сохраняем пропорции */
+  object-fit: auto; /* если хочешь, чтобы картинка занимала блок ровно */
+  margin-left: auto; /* сдвигает картинку вправо */
+  margin-right: auto; /* сдвигает картинку влево */
+}
+
+.eight_series_block {
+  margin: 0px 40px;
+  color: #000000;
+  display: flex;
+  align-items: center;  /* центрируем картинку по высоте всего текста */
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.eight_series_content {
+  max-width: 100%; /* чтобы текст не растягивался на всю ширину */
+}
+
+.eight_series {
+  font-size: 5vw;
+  margin-bottom: 20px;
+}
+
+
+.eight_series_text {
+  font-size: 1.8vw;
+  line-height: 1;
+}
+
+.imgforeight {
+    flex: 0 0 40%;
+    position: relative;
+}
+
+.imgforeight img{
+  width: 100%; /* Изображение займет 100% ширины контейнера */
+  max-width: 100%;  /* ограничиваем ширину */
+  height: auto ;      /* сохраняем пропорции */
+  object-fit: auto; /* если хочешь, чтобы картинка занимала блок ровно */
+  margin-left: auto; /* сдвигает картинку вправо */
+  margin-right: auto; /* сдвигает картинку влево */
+}
+
+.End {
+  background-color: #292929;
+  display: flex;
+  margin: 20px 0 0 0 ;
+  justify-content: space-between; /* Лого+текст слева, "О нас" справа */
+  padding: 40px 40px;
+  font-size: 2vw;
+}
+
+.left-block-end {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Расстояние между логотипом и */
+}
+
+
+.name{
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.about {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+
+  display: flex;             /* включаем флекс */
+  flex-direction: column;    /* элементы сверху вниз */
+  align-items: center;       /* выравниваем по центру горизонтально */
+  gap: 15px;                 /* расстояние между текстом и иконками */
+
+}
+
+.about_img{
+  display: flex;           /* включаем флекс */
+  justify-content: center; /* выравниваем иконки по центру */
+  gap: 10px;               /* расстояние между иконками */
+}
+
+.about img {
+  width: 60px;   /* задаём размер иконок */
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+
+/* Медиа-запрос для мобильных устройств - здесь изображение уходит под текст */
+@media (max-width: 768px) {
+    .two_series_block {
+        flex-direction: column; /* Меняем направление на колонку */
+        padding: 20px;
+    }
+    
+    .two_series_content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+        text-align:left;
+    }
+
+    .two_series {
+        font-size: 7vw;
+    }
+    
+    .two_series_text {
+        font-size: 3vw;
+    }
+    
+    .imgfortwo {
+        max-width: 100%;
+    }
+
+    .four_series_block {
+        flex-direction: column; /* Меняем направление на колонку */
+        padding: 20px;
+    }
+    
+    .four_series_content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+        text-align:left;
+    }
+
+    .four_series {
+        font-size: 7vw;
+    }
+    
+    .four_series_text {
+        font-size: 3vw;
+    }
+    
+    .imgforfour {
+        max-width: 100%;
+    }
+    
+    .five_series_block {
+        flex-direction: column; /* Меняем направление на колонку */
+        padding: 20px;
+    }
+    
+    .five_series_content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+        text-align:left;
+    }
+
+    .five_series {
+        font-size: 7vw;
+    }
+    
+    .five_series_text {
+        font-size: 3vw;
+    }
+    
+    .imgforfive {
+        max-width: 100%;
+    }
+
+    .eight_series_block {
+        flex-direction: column; /* Меняем направление на колонку */
+        padding: 20px;
+    }
+    
+    .eight_series_content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+        text-align:left;
+    }
+
+    .eight_series {
+        font-size: 7vw;
+    }
+    
+    .eight_series_text {
+        font-size: 3vw;
+    }
+    
+    .imgforeight {
+        max-width: 100%;
+    }
+
+    .End {
+        font-size: 2vw;
+        flex-direction: column; /* Меняем направление на колонку */
+        padding: 20px;
+    }
+
+    .name{
+    align-items: center;
+    font-size: 5vw;
+    color: white;
+    margin: auto;
+    }
+
+    .about {
+      font-size: 5vw;
+      color: white;
+      flex-direction:column;
+      margin-bottom: 20px;
+    }
+
+    .about img {
+      width: 10vw;   /* задаём размер иконок */
+      height: 10vw;
+      flex-direction: column;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+}

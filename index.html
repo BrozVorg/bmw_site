@@ -4,17 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMW</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style/style.css">
 </head>
+<script src="script.js"></script>
 <body>
 
  <div class="container">
   <div class="headbotton">
     <div class="left-block">
-      <img src="./images/First/лого.png" alt="Логотип BMW">
-      <div class="model">Модельный ряд</div>
+      <a href="index.html" class="logo-link">
+        <img src="./style/images/First/лого.png" alt="Логотип BMW">
+       </a>
+      <a href="#section1" class="model">Модельный ряд</a>
     </div>
-    <div class="aboutus">О нас</div>
+    <a href="#aboutus" class="aboutus">О нас</a>
   </div>
 
   <hr1>
@@ -24,11 +27,12 @@
 
 
 <div class="series">
-  <div class="headtochose">Выбери свою мечту</div>
+  <div id="section1" class="headtochose">Выбери свою мечту</div>
 <div>
   <hr2></hr2>
 
   <div class="two_series_block">
+    <a href="second.html">
     <div class="two_series_content">
       <div class="two_series">BMW 2 серии Coupe</div>
       <div class="two_series_text">
@@ -39,11 +43,14 @@
         заднеприводной архитектуре новый BMW 2 серии Coupe<br>
         отличается невероятно точной и острой управляемостью.
       </div>
+    </a>
+      
     </div>
-    
+    <a href="second.html">
     <div class="imgfortwo">
-      <img src="./images/First/2 серия.png" alt="BMW 2 серии Coupe">
+      <img src="./style/images/First/2 серия.png" alt="BMW 2 серии Coupe">
     </div>
+    </a>
   </div>
 
   <hr2></hr2>
@@ -62,7 +69,7 @@
     </div>
     
     <div class="imgforfour">
-      <img src="./images/First/4 серия.png" alt="BMW 2 серии Coupe">
+      <img src="./style/images/First/4 серия.png" alt="BMW 2 серии Coupe">
     </div>
   </div>
 
@@ -83,16 +90,16 @@
     </div>
     
     <div class="imgforfive">
-      <img src="./images/First/5 серия.png" alt="BMW 2 серии Coupe">
+      <img src="./style/images/First/5 серия.png" alt="BMW 2 серии Coupe">
     </div>
   </div>
 
    <hr2></hr2>
 
-  <div class="two_series_block">
-    <div class="two_series_content">
-      <div class="two_series">BMW 8 серии Coupe</div>
-      <div class="two_series_text">
+  <div class="eight_series_block">
+    <div class="eight_series_content">
+      <div class="eight_series">BMW 8 серии Coupe</div>
+      <div class="eight_series_text">
         Обновленный BMW 8 серии Coupe сочетает в себе характер<br>
         спорткара с эксклюзивной элегантностью роскошного<br>
         автомобиля BMW. Испытайте сами:<br>
@@ -103,7 +110,7 @@
       </div>
     </div>
     
-    <div class="imgfortwo"><img src="./images/First/8 серия.png" alt="BMW 2 серии Coupe"></div>
+    <div class="imgforeight"><img src="./style/images/First/8 серия.png" alt="BMW 8 серии Coupe"></div>
   </div>
   <hr2></hr2>
 </div>
@@ -112,11 +119,11 @@
   <div class="left-block-end">
       <div class="name">Давтян Давид Давидович</div>
     </div>
-    <div class="about">Для связи
+    <div id="aboutus" class="about">Для связи
       <div class="about_img">
-          <img src="./images/First/тг.png" alt="">
-          <img src="./images/First/вк.png" alt="">
-          <img src="./images/First/вотсап.png" alt="">
+          <img src="./style/images/First/тг.png" alt="">
+          <img src="./style/images/First/вк.png" alt="">
+          <img src="./style/images/First/вотсап.png" alt="">
       </div>
   </div>
 </div>
