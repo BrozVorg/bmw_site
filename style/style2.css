@@ -259,11 +259,19 @@ body {
   gap: 10px;               /* расстояние между иконками */
 }
 
-.about img {
-  width: 45px;   /* задаём размер иконок */
-  height: 45px;
-  cursor: pointer;
-  transition: transform 0.3s;
+.about_img a {
+    display: inline-block;
+    transition: transform 0.3s ease; /* анимация при наведении */
+}
+
+.about_img a:hover {
+    transform: scale(1.1); /* увеличение при наведении */
+}
+
+.about_img img {
+    width: 60px; /* задайте нужный размер */
+    height: 60px;
+    object-fit: contain;
 }
 
 /* Адаптив */
