@@ -79,7 +79,7 @@ body {
   align-items: center;
   justify-content: space-between; /* Лого+текст слева, "О нас" справа */
   padding: 20px 40px;
-  font-size: 5vw;
+  font-size: 4vw;
   position: relative;
 }
 
@@ -98,7 +98,7 @@ body {
 }
 
 .aboutus{
-  font-size: 5vw;
+  font-size: 4vw;
   text-decoration: none; /* Убирает подчеркивание */
   color: inherit; /* Наследует цвет от родителя */
   cursor: pointer; /* Курсор-указатель при наведении */
@@ -180,136 +180,13 @@ a {
 .two_series_text {
   font-size: 1.8vw;
   line-height: 1;
+  max-width: 80%;
 }
 
 .imgfortwo {
-    flex: 0 0 40%;
-    position: relative;
+  flex: 45%; /* задаем ширину контейнера для изображения */
 }
 
-.imgfortwo img{
-  width: 100%; /* Изображение займет 100% ширины контейнера */
-  max-width: 100%;  /* ограничиваем ширину */
-  height: auto ;      /* сохраняем пропорции */
-  object-fit: auto; /* если хочешь, чтобы картинка занимала блок ровно */
-  margin-left: auto; /* сдвигает картинку вправо */
-  margin-right: auto; /* сдвигает картинку влево */
-}
-
-
-.four_series_block {
-  margin: 0px 40px;
-  color: #000000;
-  display: flex;
-  align-items: center;  /* центрируем картинку по высоте всего текста */
-  justify-content: space-between;
-  padding: 40px;
-}
-
-.four_series_content {
-  max-width: 100%; /* чтобы текст не растягивался на всю ширину */
-}
-
-.four_series {
-  font-size: 5vw;
-  margin-bottom: 20px;
-}
-
-
-.four_series_text {
-  font-size: 1.8vw;
-  line-height: 1;
-}
-
-.imgforfour {
-    flex: 0 0 40%;
-    position: relative;
-}
-
-.imgforfour img{
-  width: 100%; /* Изображение займет 100% ширины контейнера */
-  max-width: 100%;  /* ограничиваем ширину */
-  height: auto ;      /* сохраняем пропорции */
-  object-fit: auto; /* если хочешь, чтобы картинка занимала блок ровно */
-  margin-left: auto; /* сдвигает картинку вправо */
-  margin-right: auto; /* сдвигает картинку влево */
-}
-
-.five_series_block {
-  margin: 0px 40px;
-  color: #000000;
-  display: flex;
-  align-items: center;  /* центрируем картинку по высоте всего текста */
-  justify-content: space-between;
-  padding: 40px;
-}
-
-.five_series_content {
-  max-width: 100%; /* чтобы текст не растягивался на всю ширину */
-}
-
-.five_series {
-  font-size: 5vw;
-  margin-bottom: 20px;
-}
-
-
-.five_series_text {
-  font-size: 1.8vw;
-  line-height: 1;
-}
-
-.imgforfive {
-    flex: 0 0 40%;
-    position: relative;
-}
-
-.imgforfive img{
-  width: 100%; /* Изображение займет 100% ширины контейнера */
-  max-width: 100%;  /* ограничиваем ширину */
-  height: auto ;      /* сохраняем пропорции */
-  object-fit: auto; /* если хочешь, чтобы картинка занимала блок ровно */
-  margin-left: auto; /* сдвигает картинку вправо */
-  margin-right: auto; /* сдвигает картинку влево */
-}
-
-.eight_series_block {
-  margin: 0px 40px;
-  color: #000000;
-  display: flex;
-  align-items: center;  /* центрируем картинку по высоте всего текста */
-  justify-content: space-between;
-  padding: 40px;
-}
-
-.eight_series_content {
-  max-width: 100%; /* чтобы текст не растягивался на всю ширину */
-}
-
-.eight_series {
-  font-size: 5vw;
-  margin-bottom: 20px;
-}
-
-
-.eight_series_text {
-  font-size: 1.8vw;
-  line-height: 1;
-}
-
-.imgforeight {
-    flex: 0 0 40%;
-    position: relative;
-}
-
-.imgforeight img{
-  width: 100%; /* Изображение займет 100% ширины контейнера */
-  max-width: 100%;  /* ограничиваем ширину */
-  height: auto ;      /* сохраняем пропорции */
-  object-fit: auto; /* если хочешь, чтобы картинка занимала блок ровно */
-  margin-left: auto; /* сдвигает картинку вправо */
-  margin-right: auto; /* сдвигает картинку влево */
-}
 
 .End {
   background-color: #292929;
@@ -362,99 +239,36 @@ a {
 /* Медиа-запрос для мобильных устройств - здесь изображение уходит под текст */
 @media (max-width: 768px) {
     .two_series_block {
-        flex-direction: column; /* Меняем направление на колонку */
-        padding: 20px;
+        flex-direction: column;
+        margin: 0 20px;
+        max-width: 100%;
     }
     
     .two_series_content {
-        max-width: 100%;
+        width: 100%;
         padding-right: 0;
         margin-bottom: 30px;
-        text-align:left;
+        box-sizing: border-box;
     }
 
     .two_series {
-        font-size: 7vw;
+        font-size: 7vw; /* лучше чем 7vw */
     }
     
     .two_series_text {
-        font-size: 3vw;
+        font-size: 3vw; /* лучше чем 3vw */
     }
     
     .imgfortwo {
-        max-width: 100%;
-    }
-
-    .four_series_block {
-        flex-direction: column; /* Меняем направление на колонку */
-        padding: 20px;
-    }
-    
-    .four_series_content {
-        max-width: 100%;
-        padding-right: 0;
-        margin-bottom: 30px;
-        text-align:left;
-    }
-
-    .four_series {
-        font-size: 7vw;
-    }
-    
-    .four_series_text {
-        font-size: 3vw;
-    }
-    
-    .imgforfour {
+        width: 100%;
         max-width: 100%;
     }
     
-    .five_series_block {
-        flex-direction: column; /* Меняем направление на колонку */
-        padding: 20px;
-    }
-    
-    .five_series_content {
+    .imgfortwo img {
+        width: 100%;
         max-width: 100%;
-        padding-right: 0;
-        margin-bottom: 30px;
-        text-align:left;
-    }
-
-    .five_series {
-        font-size: 7vw;
-    }
-    
-    .five_series_text {
-        font-size: 3vw;
-    }
-    
-    .imgforfive {
-        max-width: 100%;
-    }
-
-    .eight_series_block {
-        flex-direction: column; /* Меняем направление на колонку */
-        padding: 20px;
-    }
-    
-    .eight_series_content {
-        max-width: 100%;
-        padding-right: 0;
-        margin-bottom: 30px;
-        text-align:left;
-    }
-
-    .eight_series {
-        font-size: 7vw;
-    }
-    
-    .eight_series_text {
-        font-size: 3vw;
-    }
-    
-    .imgforeight {
-        max-width: 100%;
+        height: auto;
+        display: block;
     }
 
     .End {

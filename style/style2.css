@@ -56,6 +56,8 @@ body {
 }
 
 .container {
+  font-family: 'BMW Type';
+  padding-top: 10px;
     color: #fff;
     width: 100%;
     position: relative;
@@ -93,7 +95,7 @@ body {
 }
 
 .aboutus{
-  font-size: 4w;
+  font-size: 4vw;
   text-decoration: none; /* Убирает подчеркивание */
   color: inherit; /* Наследует цвет от родителя */
   cursor: pointer; /* Курсор-указатель при наведении */
@@ -102,7 +104,7 @@ body {
 }
 .line {
   display: block;
-  margin: 20px 40px;         /* отступы сверху/снизу и слева/справа */
+  margin: 10px 40px;         /* отступы сверху/снизу и слева/справа */
   border: none;         /* убираем стандартную линию */
   border-top: 2px solid #ffffff; /* рисуем свою линию */
   box-sizing: border-box;
@@ -125,6 +127,7 @@ body {
   padding: 40px;
   max-width: 100%; /* чтобы текст не растягивался на всю ширину */
   padding-bottom: 13vw; 
+  gap: 30px;
 }
 .two_series {
   font-size: 5vw;
@@ -135,15 +138,14 @@ body {
   font-size: 1.8vw;
   line-height: 1;
 }
+.imgfortwo {
+  flex: 0 0 45%; /* задаем ширину контейнера для изображения */
+}
+
 .imgfortwo img {
-  flex: 0 0 40%;
-  position: relative;
-  width: 100%; /* Изображение займет 100% ширины контейнера */
-  max-width: 100%;  /* ограничиваем ширину */
-  height: auto ;      /* сохраняем пропорции */
-  object-fit: auto; /* если хочешь, чтобы картинка занимала блок ровно */
-  margin-left: auto; /* сдвигает картинку вправо */
-  margin-right: auto; /* сдвигает картинку влево */
+  padding-top: 100px;
+  width: 35vw;
+  height: auto; /* автоматическая высота для сохранения пропорций */
 }
 
 /* Особенности */
@@ -232,12 +234,14 @@ body {
 
 
 .name{
+  font-family: 'BMW Type';
   font-size: 3vw;
   color: white;
   margin-bottom: 20px;
 }
 
 .about {
+  font-family: 'BMW Type';
   font-size: 3vw;
   color: white;
   margin-bottom: 20px;
@@ -272,7 +276,6 @@ body {
   .two_series_content {
       max-width: 100%;
       padding-right: 0;
-      margin-bottom: 30px;
       text-align:left;
   }
 
@@ -281,14 +284,22 @@ body {
   }
     
   .two_series_text {
-      font-size: 3vw;
-      padding-bottom: 50px;
+      font-size: 5vw;
   }
     
-  .imgfortwo {
-    width: 70vw;
-    height: 70vw;
+ .imgfortwo {
+    width: 100%; /* изображение на всю ширину контейнера */
+    height: auto;
   }
+
+  .imgfortwo img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* ограничиваем максимальную высоту */
+    object-fit: cover; /* или contain */
+  }
+
+
   .features-blocks {
     flex-direction:column;
   }
