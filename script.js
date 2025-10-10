@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Плавное появление элементов при скролле (опционально)
 function initScrollAnimations() {
-    const animatedElements = document.querySelectorAll('.series, .two_series_block, .four_series_block, .five_series_block, .eight_series_block');
+    const animatedElements = document.querySelectorAll('.series, .two_series_block, .two_series_block, .features, .engines');
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
